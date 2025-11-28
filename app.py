@@ -11,7 +11,7 @@ st.set_page_config(page_title="Zomato Dashboard", layout="wide")
 # -------------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("zomato.csv")
+    df = pd.read_csv("Zomato_Live.csv")
     df = df.drop(['url','address','phone','dish_liked','reviews_list',
                   'menu_item','listed_in(type)','listed_in(city)'], axis=1)
 
